@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Rubik:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Merienda', cursive;
+font-family: 'Rubik', sans-serif; */
