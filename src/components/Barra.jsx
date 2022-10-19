@@ -6,7 +6,7 @@ const Barra = () => {
 
     return (
         <>
-            <div className="flex justify-between items-center px-6 py-6 md:px-24 md:py-6 shadow-lg w-full bg-white">
+            <div className="flex justify-between items-center px-6 py-6 md:px-24 md:py-6 shadow-lg bg-white md:fixed md:z-50 w-full">
                 <h1 className="text-2xl md:text-4xl font-merienda font-bold">Panadería</h1>
                 <nav className="hidden md:flex gap-10 font-merienda">
                     <a className="hover:text-primary cursor-pointer" >Servicios</a>

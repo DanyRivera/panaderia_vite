@@ -7,6 +7,34 @@
 /* font-family: 'Merienda', cursive;
 font-family: 'Rubik', sans-serif; */
 
+.bg-image {
+    background-image: url(/img/hero.jpg);
+    height: 90vh;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+    .bg-image {
+        height: 100vh;
+        background-position: center center;
+    }
+}
+
+.bg-image::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    /* z-index: -1; */
+}
+
 .animacion {
     animation-name: mostrarMenu;
     animation-duration: .3s;
