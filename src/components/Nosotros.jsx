@@ -1,7 +1,7 @@
 
 const Nosotros = () => {
     return (
-        <section className="flex flex-col md:flex-row md:gap-2 my-14 md:mx-24 md:mt-24">
+        <section className="flex flex-col md:flex-row md:gap-2 my-14 md:mx-24 md:mt-24" id="acerca">
             <img className=" md:w-1/3" src="/img/nosotros.png" alt="Imagen Nosotros" />
             <div className="-order-1 md:order-1 mb-5 mx-5">
                 <h3 className="font-rubik font-semibold text-2xl mb-3 text-primary">Acerca de Nosotros</h3>

@@ -1,7 +1,7 @@
 
 const Ubicacion = () => {
     return (
-        <section className="mb-32">
+        <section className="mb-32" id="ubicacion">
             <h2 className="font-merienda font-bold text-center text-3xl md:text-4xl text-primary mb-8">Ubicación</h2>
 
             <div className="flex flex-col  gap-5 md:mx-10">

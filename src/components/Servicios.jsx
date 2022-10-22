@@ -1,7 +1,7 @@
 
 const Servicios = () => {
   return (
-    <main className="my-24 mx-5 md:mx-24">
+    <main className="my-24 mx-5 md:mx-24" id="servicios">
       <h2 className="font-merienda font-bold text-center text-3xl md:text-4xl text-primary">Servicios</h2>
 
       <div className="md:grid grid-cols-3 md:gap-20 ld:gap-40 mt-10">

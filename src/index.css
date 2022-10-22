@@ -19,7 +19,7 @@ font-family: 'Rubik', sans-serif; */
 
 @media (min-width: 768px) {
     .bg-image {
-        height: 100vh;
+        height: 110vh;
         background-position: center center;
     }
 }

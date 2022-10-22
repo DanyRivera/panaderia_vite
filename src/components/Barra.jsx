@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Barra = () => {
 
@@ -9,10 +10,34 @@ const Barra = () => {
             <div className="flex justify-between items-center px-6 py-6 md:px-24 md:py-6 shadow-lg bg-white md:fixed md:z-50 w-full">
                 <h1 className="text-2xl md:text-4xl font-merienda font-bold">Panadería</h1>
                 <nav className="hidden md:flex gap-10 font-merienda">
-                    <a className="hover:text-primary cursor-pointer" >Servicios</a>
-                    <a className="hover:text-primary cursor-pointer" >Ubicación</a>
-                    <a className="hover:text-primary cursor-pointer" >Contacto</a>
-                    <a className="hover:text-primary cursor-pointer" >Acerca</a>
+                    <Link
+                        className="hover:text-primary cursor-pointer"
+                        to="servicios"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Servicios</Link>
+                    <Link
+                        className="hover:text-primary cursor-pointer"
+                        to="ubicacion"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Ubicación</Link>
+                    <Link
+                        className="hover:text-primary cursor-pointer"
+                        to="contacto"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Contacto</Link>
+                    <Link
+                        className="hover:text-primary cursor-pointer"
+                        to="acerca"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Acerca</Link>
                 </nav>
 
                 {!menu ? (
@@ -38,10 +63,34 @@ const Barra = () => {
             </div>
             {menu && (
                 <nav className="animacion md:hidden flex flex-col items-center text-center my-auto gap-5 font-merienda">
-                    <a className="text-primary border-y py-4  w-full" >Servicios</a>
-                    <a className="text-primary border-b w-full pb-4" >Ubicación</a>
-                    <a className="text-primary border-b w-full pb-4" >Contacto</a>
-                    <a className="text-primary border-b w-full pb-4" >Acerca</a>
+                    <Link
+                        className="text-primary border-y py-4  w-full"
+                        to="servicios"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Servicios</Link>
+                    <Link
+                        className="text-primary border-b w-full pb-4"
+                        to="ubicacion"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Ubicación</Link>
+                    <Link
+                        className="text-primary border-b w-full pb-4"
+                        to="contacto"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Contacto</Link>
+                    <Link
+                        className="text-primary border-b w-full pb-4"
+                        to="acerca"
+                        smooth={true}
+                        duration={1000}
+                        offset={-150}
+                    >Acerca</Link>
                 </nav>
             )}
         </>
