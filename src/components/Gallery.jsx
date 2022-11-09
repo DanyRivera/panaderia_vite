@@ -33,7 +33,7 @@ const Gallery = () => {
     ]
 
     return (
-        <section className="mb-24 hidden md:block">
+        <section className="mb-36 hidden md:block">
             <h2 className="font-merienda font-bold text-center text-3xl md:text-4xl text-primary mb-10">Demostración</h2>
 
             <Slider {...settings}>
