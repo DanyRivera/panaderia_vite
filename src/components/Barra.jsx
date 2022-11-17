@@ -61,38 +61,37 @@ const Barra = () => {
                 )}
 
             </div>
-            {menu && (
-                <nav className="animacion md:hidden flex flex-col items-center text-center my-auto gap-5 font-merienda">
-                    <Link
-                        className="text-primary border-y py-4  w-full"
-                        to="servicios"
-                        smooth={true}
-                        duration={1000}
-                        offset={-150}
-                    >Servicios</Link>
-                    <Link
-                        className="text-primary border-b w-full pb-4"
-                        to="ubicacion"
-                        smooth={true}
-                        duration={1000}
-                        offset={-150}
-                    >Ubicación</Link>
-                    <Link
-                        className="text-primary border-b w-full pb-4"
-                        to="contacto"
-                        smooth={true}
-                        duration={1000}
-                        offset={-150}
-                    >Contacto</Link>
-                    <Link
-                        className="text-primary border-b w-full pb-4"
-                        to="acerca"
-                        smooth={true}
-                        duration={1000}
-                        offset={-150}
-                    >Acerca</Link>
-                </nav>
-            )}
+            <nav className={`${menu ? 'mostrar' : 'hidden'} md:hidden flex flex-col items-center text-center my-auto gap-5 font-merienda z-40`}>
+                <Link
+                    className="text-primary border-y py-4  w-full"
+                    to="servicios"
+                    smooth={true}
+                    duration={1000}
+                    offset={-150}
+                >Servicios</Link>
+                <Link
+                    className="text-primary border-b w-full pb-4"
+                    to="ubicacion"
+                    smooth={true}
+                    duration={1000}
+                    offset={-150}
+                >Ubicación</Link>
+                <Link
+                    className="text-primary border-b w-full pb-4"
+                    to="contacto"
+                    smooth={true}
+                    duration={1000}
+                    offset={-150}
+                >Contacto</Link>
+                <Link
+                    className="text-primary border-b w-full pb-4"
+                    to="acerca"
+                    smooth={true}
+                    duration={1000}
+                    offset={-150}
+                >Acerca</Link>
+            </nav>
+
         </>
     )
 }
